@@ -1,0 +1,881 @@
+/* *** estrutura básica*** */
+:root {
+  --white-color: #ffffff;
+  --cinzaClaro-color: #dedede;
+  --BrancoCinzento-color: #c8c7c7;
+  --laranja-color: #fb9c2a;
+  --yellow-color: #fcb35c;
+  --azulEscuro-color: #0f5f95;
+  --azulMedio-color: #137dc5;
+  --azulClaro-color: #2199ea;
+  --cinzaMedio-color: #1d1f25;
+  --cinzaEscuro-color: #292929;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%; /* Set height to 100% of viewport height */
+  background-image: url("https://img.freepik.com/fotos-gratis/luxo-abstrato-desfocar-gradiente-cinza-escuro-e-preto-usado-como-parede-de-estudio-de-fundo-para-exibir-seus-produtos-plano-de-fundo-liso-do-estudio_1258-54444.jpg?w=826&t=st=1708368197~exp=1708368797~hmac=5ce620b424db46baa6da6d236779738b91a7c846d02cbcf16dc572ada2d76dd5"); /* Corrected gradient syntax */
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #292929;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  background-color: #dedede;
+  justify-content: center;
+  width: 100%;
+  height: 70px;
+  border-radius: 0 0 30% 30%;
+  box-shadow: 1px 10px 10px #c8c7c7;
+}
+
+.links {
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.links:hover {
+  color: #fff;
+  border: 1px solid #253f93;
+  background-color: #253f93;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+.botao {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  border: 1px solid #fb9b28;
+  background-color: #fb9b28;
+  border-radius: 5px;
+  width: 195px;
+  height: 50px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+}
+
+.botao:hover {
+  box-shadow: 5px 0 15px #253f93;
+  background-color: #253f93;
+  border: 1px solid #253f93;
+}
+
+header ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+  height: 60px;
+  width: 100%;
+}
+
+header ul li {
+  padding: 0 15px;
+}
+
+#main-menu {
+  display: none;
+}
+
+/* Estilo do botão de alternância do menu */
+#toggle-menu-btn {
+  display: none;
+}
+
+.imgLogo {
+  width: auto;
+  height: 120px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  /*height: 100%;*/
+  width: 100%;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 80vw;
+  max-width: 1200px;
+}
+
+/* *** retorno ao topo *** */
+
+.retorno-topo {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  font-size: 3rem;
+  color: #253f93;
+  cursor: pointer;
+  z-index: 111;
+}
+
+/* *** pagina index.html *** */
+/*section slider*/
+/*slides*/
+/* slide dados da fome*/
+
+.sessao-slider {
+  height: 100%;
+}
+
+#dados-fome {
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+  background-color: #fb9b28;
+}
+
+.dados {
+  display: flex;
+  flex-direction: row;
+}
+
+.dados div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#dados-fome div p {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: #e3e3f8;
+}
+
+#dados-fome div h3 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.origem-dados {
+  color: #fff;
+}
+
+/*slide do slogan*/
+#slogan:nth-child(1) {
+  background-image: url("https://img.freepik.com/fotos-gratis/correio-entregando-mantimentos-em-casa_23-2149738020.jpg?t=st=1708096445~exp=1708097045~hmac=b3ec27c3315e9a0b7109b5f53042c2e6a614923ba381c90cd1a945909909458e");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#slogan h3 {
+  position: absolute;
+  z-index: 111;
+  font-size: 2.3rem;
+  width: 25vw;
+  left: 10%;
+  top: 30px;
+  color: #253f93;
+  text-shadow: 2px 2px 5px #fff;
+}
+
+#slogan .origem-dados {
+  background-color: #fb9b28;
+  border-radius: 0 0 5px 5px;
+  padding: 5px;
+  margin-top: 20%;
+  text-align: center;
+  color: #fff;
+}
+
+#missao {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #253f93;
+  padding: 0 20%;
+  color: #fff;
+  line-height: 1.5;
+  font-size: 1.2rem;
+}
+
+#missao h3 {
+  font-size: 2rem;
+}
+
+#missao h3 span {
+  color: #fb9b28;
+  text-transform: uppercase;
+}
+
+/* slide promocao*/
+
+#slide-promocao {
+  background-image: url("https://img.freepik.com/fotos-gratis/a-senhora-afro-americana-positiva-mostra-algo-incrivel-aponta-para-cima-e-para-os-lados-com-o-dedo-indicador-anuncia-espaco-de-copia-tem-sorriso-cheio-de-dentes-isolado-sobre-fundo-amarelo_273609-34317.jpg?w=740&t=st=1708211370~exp=1708211970~hmac=4a4daf26cf9075717d16da66602f42c8877d1852c33d0efa4e5b8b9b7f270b6c");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: red;
+}
+
+.promocao {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 70%;
+  height: 100%;
+  margin-left: 55%;
+  font-size: 1.5rem;
+}
+
+.promocao h2 {
+  font-size: 2rem;
+}
+
+.promocao a {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  border: 1px solid #253f93;
+  width: 60%;
+}
+
+#slide-restaurante {
+  background-image: url("https://img.freepik.com/fotos-gratis/grupo-de-pessoas-voluntarias-em-um-banco-de-alimentos-para-pessoas-pobres_23-2149012198.jpg?w=740&t=st=1708213519~exp=1708214119~hmac=2d235cb7d17be3ef411fbe047fec02ce472815095437f5d5370b34cf1f6374d3");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#slide-restaurante h2 {
+  margin-top: -15px;
+  font-size: 2rem;
+  color: #253f93;
+  text-shadow: 1px 1px 3px #fb9b28;
+}
+
+/* section propostas*/
+
+.propostas {
+  display: flex;
+  align-items: center;
+}
+
+.descricao-emp-teto,
+.descricao {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 35px;
+  margin-bottom: 55px;
+  width: 70vw;
+  font-size: 1.5rem;
+  line-height: 1.6rem;
+}
+
+.descricao-emp-teto img {
+  width: 50%;
+  height: auto;
+  border-radius: 45%;
+  box-shadow: 10px 2px 25px #292929;
+}
+
+.lista-propostas {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.lista-propostas div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 15px;
+  width: 25vw;
+  height: 70vh;
+  background-color: #f6f5f5;
+  box-shadow: 0 0 10px #0f5f96;
+}
+
+.lista-propostas div img {
+  width: 80%;
+  height: 30%;
+  border-radius: 10px;
+}
+
+.lista-propostas div h3 {
+  font-size: 2rem;
+}
+
+.lista-propostas div p {
+  text-align: center;
+}
+
+.lista-propostas div .botoes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  height: 12%;
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+/* *** parte da lista dos receptores *** */
+
+.lista-receptores {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+/*** recepitores ***/
+
+.lista-receptores div img:hover {
+  cursor: pointer;
+}
+
+.receptor {
+  display: none;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.receptor h1 {
+  margin-top: 80px;
+}
+
+.receptor img {
+  width: 200px;
+  height: 200px;
+  margin-top: 50px;
+}
+
+.lista-propostas div h3 {
+  text-align: center;
+}
+
+.lista-receptores > div {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* *** pagina sobre.html *** */
+
+.definicoes-empresa{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+.dados-header {
+  width: 100%;
+  border-bottom: 1px solid #292929;
+}
+
+.dados-header p {
+  margin-left: 25px;
+}
+
+.dados-header h2 {
+  margin-left: 25px;
+  font-size: 5rem;
+  color: #fb9c2a;
+  text-transform: uppercase;
+}
+
+.dados-header h2 span:first-child {
+  font-size: 7.5rem;
+}
+
+.dados-header h2 span:last-child {
+  font-size: 7.5rem;
+}
+
+.dados-header p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 1.7rem;
+}
+
+.dados-header .descritivo-header {
+  margin-bottom: 200px;
+}
+
+.linha {
+  background-color: #fb9b28;
+  width: 500px;
+  height: 4px;
+  margin: 15px 0 25px 0;
+}
+
+.descritivo-header {
+  width: 50%;
+}
+
+.container-definicoes {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-top: -150px;
+  max-width: 1200px;
+}
+
+.definicao-missao,
+.valores {
+  background-color: #253f93;
+}
+
+.visao {
+  background-color: #fb9b28;
+}
+
+.definicoes-empresa .container-definicoes > div {
+  width: 25%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 25px;
+  color: #fff;
+  max-width: 450px;
+}
+
+.definicoes-empresa > div img {
+  width: 80px;
+  height: 80px;
+  background-size: 100% 100%;
+  background-position: center;
+  border-radius: 50%;
+  border: 1ps solid #fff;
+}
+
+.img-missao {
+  background-image: url("https://img.freepik.com/vetores-gratis/ilustracao-de-alvo-negocio-icone_53876-5898.jpg?w=740&t=st=1708275349~exp=1708275949~hmac=8849b0dff695c6d7d8b5666083bee78dba6f95bbc9d5ca1e12e0961418336175");
+}
+
+.img-visao {
+  background-image: url(https://img.freepik.com/vetores-gratis/ilustracao-de-olho-icone_53876-35885.jpg?w=740&t=st=1708275596~exp=1708276196~hmac=6705c44408c6ff1df1678c9e0de1201e5ef59bcbf770c838abdace7935cdff2e);
+}
+
+.img-valores {
+  background-image: url("https://img.freepik.com/vetores-gratis/ilustracao-de-criativo-ideias_53876-5897.jpg?w=740&t=st=1708275415~exp=1708276015~hmac=c688fcb7bb1866f9329be737cc1150c9b78025a4c170acd38250d3014c743289");
+}
+
+.linha-p {
+  background-color: #fff;
+  width: 80px;
+  height: 3px;
+  margin: 5px 0 15px 0;
+}
+
+.texto-definicoes {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+.institucional {
+  margin-top: 50px;
+}
+
+.institucional h1 {
+  display: flex;
+  align-self: center;
+  padding: 15px;
+  font-size: 3rem;
+  margin-bottom: 2%;
+}
+
+.institucional p {
+  line-height: 1.5em;
+}
+
+.historia {
+  display: flex;
+  flex-direction: column;
+}
+
+.historia div {
+  padding: 15px;
+  margin-bottom: 5%;
+}
+
+.historia-texto-direita {
+  display: flex;
+  align-items: center;
+  gap: 3%;
+  background-color: #dedede;
+}
+
+.historia img {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: auto;
+}
+
+.historia-texto-esquerda {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 3%;
+}
+
+/* *** parte dos valores *** */
+.valores-detalhados {
+  border: 1ps solid transparent;
+  border-radius: 25px 25px 0 0;
+  box-shadow: 10px 2px 25px #292929;
+  padding: 5px 15px;
+}
+
+.nossos-valores {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  align-self: center;
+  width: 90%;
+  height: auto;
+}
+
+.nossos-valores p {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #eb8f1e;
+  color: #fff;
+  width: 26%;
+  margin: 25px 0 25px 0;
+  padding: 10px 10px;
+}
+
+/* *** contatos *** */
+
+.sessao-contatos {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 90vh;
+  background-color: #1d1f25;
+  margin-bottom: 0;
+}
+
+.sessao-contatos article {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #fff;
+  font-size: 1.2rem;
+  width: 85%;
+  height: 100%;
+}
+
+.contatos {
+  font-size: 1rem;
+}
+
+/*area de contatos - form*/
+
+.form-contato {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 30%;
+  height: 70vh;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.form-contato input {
+  height: 2.2rem;
+}
+
+.form-contato input,
+.form-contato textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #253f93;
+  background-color: #292727;
+  color: #efebeb;
+  /* Cor do texto no campo de entrada */
+}
+
+.form-contato button {
+  width: 100%;
+}
+
+.telefones p {
+  margin-bottom: 10px;
+}
+
+.sessao-contatos article .contatos {
+  height: 100%;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.sessao-contatos article .redes-sociais {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.redes-sociais p {
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+
+.redes {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 2.5rem;
+}
+
+.redes a {
+  height: 50px;
+  padding: 15px;
+}
+
+.convocacao {
+  height: 300px;
+  width: 100%;
+  background-image: url(https://img.freepik.com/fotos-gratis/voluntario-entregando-uma-caixa-de-doacao_23-2149230538.jpg?w=740&t=st=1708361773~exp=1708362373~hmac=9d587723dd43bc18491467825f7087025137e3ec64bcea7e5a84ef984111990b);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  border-top: 1px solid #0f5f9580;
+  border-bottom: 1px solid #0f5f9580;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.convocacao div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80%;
+}
+
+.convocacao div a {
+  height: 50px;
+}
+
+.convocacao p {
+  max-width: 250px;
+  font-size: 2.5rem;
+  font-weight: 900;
+  letter-spacing: 0em;
+  text-transform: lowercase;
+  color: #ffffff;
+  text-shadow: 3px 2px #0f5f95;
+}
+
+/**** como funciona ****/
+.funcionamento {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.funciona h1 {
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 30px;
+  position: absolute;
+  width: 200px;
+  left: calc(50% - 100px);
+}
+
+.comofunciona {
+  display: flex;
+  justify-content: center;
+  width: 80vw;
+  margin: 0 auto;
+  /*grid-gap: 40px;*/
+  border-radius: 15px;
+  height: 100%;
+  flex-direction: column;
+  box-shadow: 6px 6px 10px #0000002c;
+}
+
+.comofunciona > .descricao > div:nth-child(odd) {
+  margin-top: 120px;
+}
+
+.comofunciona > .descricao > div:nth-child(even) {
+  margin-bottom: 30px;
+}
+
+.comofunciona > .descricao div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  text-align: center;
+}
+
+.comofunciona > .descricao div img {
+  margin: 10px 0 0 0;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+/*** depoimentos ***/
+
+.depoimentos article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: fr fr fr;
+  max-width: 80vw;
+  margin: 0 auto;
+  grid-gap: 40px;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+
+.card {
+  background-color: #d6d6d6;
+  display: flex;
+  align-items: center;
+  padding: 35px 40px;
+  border-radius: 25px;
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.171);
+}
+
+.card-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.card .user {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 15px;
+  border-radius: 15px;
+}
+
+.cards p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+.btn-depoimentos {
+  display: flex;
+  margin-top: 30px;
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: #8f8f8f;
+}
+
+/* *** rodape *** */
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #1d1f25;
+  border-top: 1px solid grey;
+}
+
+.footer div {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.imagem-ifes {
+  overflow: hidden;
+}
+
+.imagem-ifes img {
+  transform: scale(1.6);
+}
+
+.footer div h4 {
+  font-size: 1.3rem;
+}
+
+.footer-realizadores div {
+  flex-direction: row;
+}
+
+.footer-desenvolvedores h4,
+.footer-uso-de-imagem h4 {
+  margin-bottom: 2.3rem;
+}
+
+.footer-uso-de-imagem a,
+.footer-desenvolvedores p {
+  margin-top: 0.8rem;
+}
+
+.footer img {
+  width: 80px;
+  height: auto;
+}

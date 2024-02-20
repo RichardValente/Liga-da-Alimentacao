@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!-- css-->
+    <link href="/assets/css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/css/animacoes.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/css/responsive.css" rel="stylesheet" type="text/css" />
+
+    <!-- fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;0,900;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--imagem barra do browser-->
+    <link
+      rel="shortcut icon"
+      href="/assets/img/logo-Liga/logo-Liga-da-Alimentacao.png"
+      type="image/x-icon"
+    />
+    <!-- Compatibilidade com Browser muito antigos-->
+    <link
+      rel="icon"
+      href="/assets/img/logo-Liga/logo-Liga-da-Alimentacao.png"
+      sizes=" 32x32"
+    />
+
+    <!--bootstrap icon-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1/font/bootstrap-icons.min.css"
+    />
+    <title>Liga da Alimentacao</title>
+  </head>
+
+  <body>
+    <header id="home">
+      <a href="#home"
+        ><img
+          class="imgLogo"
+          src="/assets/img/logo-Liga/logo-Liga-da-Alimentacao.png"
+          alt="logotipo da liga da alimentação"
+        />
+      </a>
+
+      <nav id="main-menu">
+        <ul>
+          <li class="links"><a href="/index.html">Inicio</a></li>
+          <li class="links">
+            <a href="/assets/paginas/sobre.html">Quem Somos</a>
+          </li>
+          <li class="links"><a href="#funcionamento">Como Funciona</a></li>
+          <li class="links"><a href="#depoimentos">Depoimentos</a></li>
+          <li class="botao">
+            <a class="nav-link" href="#lista-propostas">Faça Parte</a>
+          </li>
+        </ul>
+      </nav>
+      <button id="toggle-menu-btn" aria-label="Toggle Menu">☰</button>
+    </header>
+
+    <main>
+      <section class="sessao-slider">
+        <article class="slider-container">
+          <div class="slider">
+            <div id="slogan" class="slide">
+              <h3>Juntos, Transformando excesso em oportunidades</h3>
+            </div>
+            <div id="missao" class="slide">
+              <h3>Nossa missão é simples, <span>mas poderosa:</span></h3>
+              <br /><br />
+              <p>
+                Reduzir a fome, o desperdício de alimentos e promover a
+                sustentabilidade alimentar. Ao facilitar a doação de alimentos,
+                queremos criar um impacto positivo em comunidades locais e
+                construir um mundo onde ninguém tenha que passar fome.
+              </p>
+            </div>
+            <div id="dados-fome" class="slide">
+              <div class="dados">
+                <div class="desperdicio">
+                  <p>Toneladas de alimentos disperdiçados por ano no Brasil</p>
+                  <h3>12,58 milhões</h3>
+                </div>
+                <div class="fome">
+                  <p>Brasileiros em situação de insegurança alimentar</p>
+                  <h3>125,2 milhões</h3>
+                </div>
+                <div class="desperdicio-individual">
+                  <p>Desperdício individual de alimentos por ano</p>
+                  <h3>60Kg</h3>
+                </div>
+              </div>
+
+              <p class="origem-dados">
+                Dados do relatório FAO de 2021 (<a
+                  href="https://pesquisassan.net.br/"
+                  target="_blank"
+                  >Rede PENSSAN</a
+                >)
+              </p>
+            </div>
+            <div id="slide-promocao" class="slide">
+              <div class="promocao">
+                <p>
+                  Ajudamos a pessoas que precisam de alimentos para a sua vida.
+                </p>
+                <h2>Programa "Doe e Ganhe"</h2>
+                <a href="#">Clique e conheça</a>
+              </div>
+            </div>
+            <div id="slide-restaurante" class="slide">
+              <h2>Restaurantes e supermercados venham fazer parte!</h2>
+              <a href="/assets/paginas/cadastro-doacoes.html"
+                >Clique aqui e doe</a
+              >
+            </div>
+          </div>
+
+          <div class="prev">❮</div>
+          <div class="dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <div class="next">❯</div>
+        </article>
+      </section>
+      <section id="propostas" class="propostas">
+        <div class="descricao-emp-teto">
+          <p>
+            A Liga da Alimentação é uma organização sem fins lucrativos que
+            busca reduzir a fome, desperdício de alimentos e promover a
+            sustentabilidade alimentar. Nosso objetivo é facilitar a doação de
+            alimentos, reduzindo o desperdício e a fome e tornar-se referência
+            para o mundo.
+          </p>
+          <img
+            src="https://img.freepik.com/fotos-gratis/correio-entregando-mantimentos-em-casa_23-2149738016.jpg?w=740&t=st=1708110439~exp=1708111039~hmac=b7ca57e800b71f7edde445f8682b637148b566eb0afaab7d93f0a054448031da"
+            alt="porta malas de um carro cheio de frutas e legumes e verduras"
+          />
+        </div>
+        <article class="lista-propostas" id="lista-propostas">
+          <div class="receptores">
+            <h3>Receptores de Doações</h3>
+            <img
+              src="https://img.freepik.com/fotos-gratis/pessoas-de-filmagem-media-trabalhando-juntas_23-2149142790.jpg?w=740&t=st=1708079612~exp=1708080212~hmac=a6866797bd9358a37299ab3255c1b19e1f9b64df704c7fd585b4728637f61c3a"
+              alt="4 pessoas separando alimentos em caixas para doação"
+            />
+            <p>
+              Aqui você encontra entidades cadastradas que recebem as doações de
+              alimentos
+            </p>
+            <div class="botoes">
+              <a class="botao" href="/assets/paginas/cadastro-receptores.html"
+                >Cadastrar</a
+              >
+              <a class="botao" id="receptorAparecer" href="#receptor">Lista</a>
+            </div>
+          </div>
+          <div class="alimentos">
+            <h3>Alimentos disponíveis</h3>
+            <img
+              src="https://img.freepik.com/fotos-gratis/carrinho-de-compras-cheio-de-produtos-dentro-de-um-supermercado_123827-28166.jpg?w=740&t=st=1708080265~exp=1708080865~hmac=ccb466c8f9afb314f548c45dde05281db8876e056c0b5c5124e753121daf6340"
+              alt="carrinho de mercado cheio de alimentos"
+            />
+            <p>Aqui a lista de alimentos disponíveis para doação</p>
+            <div class="botoes">
+              <a class="botao" href="/assets/paginas/cadastro-alimentos.html"
+                >Cadastrar</a
+              >
+            </div>
+          </div>
+          <div class="Doadores">
+            <h3>Seja um doador</h3>
+            <img
+              src="https://img.freepik.com/fotos-gratis/jovem-adulto-sorridente-segurando-caixa-de-presente-ao-ar-livre-gerada-por-ia_188544-24618.jpg?w=826&t=st=1708080941~exp=1708081541~hmac=4534731c90ec9dd8b0819bb4c2d451b8b6898bcfc00d769a42b90623c0e7cdc4"
+              alt="uma criança segurando uma caixa para doação"
+            />
+            <p>
+              Seja um doador de alimentos, ajude a combater a fome e a promover
+              a sustentabilidade aliemntar para todos
+            </p>
+            <div class="botoes">
+              <a class="botao" href="/assets/paginas/cadastro-doacoes.html"
+                >Cadastar</a
+              >
+            </div>
+          </div>
+        </article>
+      </section>
+      <section class="receptor" id="receptor">
+        <h1>Receptores de Doações</h1>
+        <article class="lista-receptores">
+          <div class="">
+            <img
+              src="/assets/img/mockups/Cabelos-cacheados-apontando-logo.png"
+              alt=""
+              class="img-receptores"
+              data-id="1"
+            />
+            <h3>Associação Beneficente Esperança</h3>
+          </div>
+
+          <div class="">
+            <img
+              src="/assets/img/mockups/homem-camisa.png"
+              alt=""
+              class="img-receptores"
+              data-id="2"
+            />
+            <h3>Casa de Apoio Amor Fraterno</h3>
+          </div>
+
+          <div class="">
+            <img
+              src="/assets/img/mockups/Jovens.png"
+              alt=""
+              class="img-receptores"
+              data-id="3"
+            />
+            <h3>ONG Unidos pelo Bem</h3>
+          </div>
+
+          <div class="">
+            <img
+              src="/assets/img/mockups/pessoas-diferentes.png"
+              alt=""
+              class="img-receptores"
+              data-id="4"
+            />
+            <h3>Instituto Sorriso Solidário</h3>
+          </div>
+        </article>
+      </section>
+      <section id="funcionamento" class="funcionamento">
+        <div class="funciona" id="comoFuciona">
+          <h1>Como Funciona</h1>
+          <selection class="comofunciona">
+            <div class="descricao">
+              <div>
+                <img
+                  src="https://img.freepik.com/vetores-gratis/servico-de-entrega-ilustrado_23-2148505081.jpg?w=740&t=st=1708267050~exp=1708267650~hmac=e379ddcdd835c07f1a4ff3555121edc05d756e207309437d798cbd844c892e71"
+                  alt="motoboy indo entregar a encomenda"
+                />
+                <p>
+                  Doação simples e Rápida:Doar alimentos na Liga da Aimentação é
+                  fácil. Basta preencher um simples formulário online,
+                  especificando os tipos de alimentos que você gostaria de doar
+                  e a quantidade disponível.
+                </p>
+              </div>
+              <div>
+                <p>
+                  Conexão Direta: Através da nossa plataforma, conectamos
+                  doadores a organizações de caridade, instituições sociais e
+                  indivíduos em necessidade. Essa conexão direta garante que a
+                  ajuda chegue onde é mais necessária.
+                </p>
+                <img
+                  src="https://img.freepik.com/vetores-gratis/ilustracao-do-conceito-conectado_114360-482.jpg?w=740&t=st=1708267225~exp=1708267825~hmac=6abc4306fa2d00050f7191e7a99d8e2c16d274bd40d22d8e718a2722d770f79c"
+                  alt="conexão entre doador e receptor"
+                />
+              </div>
+              <div>
+                <img
+                  src="https://img.freepik.com/vetores-gratis/ilustracao-em-vetor-conceito-abstrato-de-colheita-coleta-de-safras-e-vegetais-rotacao-de-safras-jardinagem-sustentavel-estacao-de-cultivo-periodo-de-gestacao-metafora-abstrata-de-alimentos-cultivados-em-casa_335657-4110.jpg?w=740&t=st=1708268074~exp=1708268674~hmac=3545d53bef65554ae6e99c7a857cbc1594063e623e5c5f92858827749ee19787"
+                  alt="mulher separando alimentos em caixas para doação e usando o celular"
+                />
+                <p>
+                  Sustentabilidade: Estamos comprometidos em reduzir o
+                  desperdício de alimentos. Ao doar produtos que de outra forma
+                  seriam descartados, você está ajudando a preservar recursos e
+                  proteger o meio ambiente.
+                </p>
+              </div>
+            </div>
+          </selection>
+        </div>
+      </section>
+      <section class="convocacao">
+        <div>
+          <p>Venha Fazer parte</p>
+          <a href="/assets/paginas/cadastro-doacoes.html" class="botao"
+            >Quero doar</a
+          >
+          <a href="/assets/paginas/cadastro-receptores.html" class="botao"
+            >Sou Distribuidor</a
+          >
+        </div>
+      </section>
+      <section class="depoimentos" id="depoimentos">
+        <article>
+          <selection class="cards">
+            <div class="card">
+              <div class="card-image">
+                <img
+                  class="user"
+                  src="/assets/img/depoimentos/mateus.jpg"
+                  alt=""
+                />
+                <h3>Mateus</h3>
+              </div>
+              <p>
+                "Olá pessoal, gostaria de compartilhar minha experiência
+                incrível com a Liga de Alimentação. Desde que me cadastrei e
+                comecei a participar, minha perspectiva sobre solidariedade e
+                ajuda ao próximo mudou completamente. A Liga de Alimentação
+                proporciona uma plataforma fácil de usar, onde qualquer pessoa
+                pode doar alimentos excedentes ou não perecíveis para quem mais
+                precisa. O processo de cadastro foi simples e rápido, e em
+                poucos minutos, já estava contribuindo para reduzir o
+                desperdício de alimentos. O que mais me impressionou foi a
+                eficiência do sistema. Assim que cadastramos os alimentos
+                disponíveis, a plataforma automaticamente conecta doadores e
+                receptores, facilitando a logística da doação. A sensação de
+                saber que estou fazendo a diferença na vida de alguém, mesmo que
+                seja de forma pequena, é indescritível. Além disso, o site
+                proporciona relatórios transparentes sobre o impacto das
+                doações, mostrando quantas pessoas foram beneficiadas e a
+                quantidade de alimentos distribuídos. Isso me dá confiança de
+                que minha contribuição está sendo realmente utilizada para
+                ajudar a combater a fome."
+              </p>
+            </div>
+
+            <div class="card">
+              <div class="card-image">
+                <img
+                  class="user"
+                  src="/assets/img/depoimentos/carla.jpg"
+                  alt=""
+                />
+                <h3>Carla</h3>
+              </div>
+              <p>
+                "Participar do site A Liga da Alimentação" foi incrível. Pude
+                contribuir para doações de alimentos e sentir o impacto positivo
+                na comunidade. A plataforma é fácil de usar, conectando doadores
+                e beneficiários de maneira eficaz. Estou motivada a continuar
+                ajudando!"
+              </p>
+            </div>
+
+            <div class="card">
+              <div class="card-image">
+                <img
+                  class="user"
+                  src="/assets/img/depoimentos/sara.jpg"
+                  alt=""
+                />
+                <h3>Sara</h3>
+              </div>
+              <p>
+                "O site A Liga da Alimentação" é simplesmente incrível! Ele
+                facilita muito a doação de alimentos, proporcionando uma maneira
+                eficaz de ajudar quem precisa. A experiência é gratificante, e
+                ver o impacto positivo na vida das pessoas reforça a importância
+                desse projeto."
+              </p>
+            </div>
+          </selection>
+          <button class="btn-depoimentos" type="button">+ Depoimentos</button>
+        </article>
+      </section>
+
+      <section id="sessao-contatos" class="sessao-contatos">
+        <article>
+          <div class="contatos">
+            <p class="bi-geo-alt-fill">
+              Rua Ali perto da praça, 500 - Centro, Rio de Janeiro - RJ
+              Cep:22000-000
+            </p>
+            <div class="telefones">
+              <p class="bi-telephone-fill">Telefone: (21) 99999-9999</p>
+              <p class="bi-whatsapp">(21) 98888-8888</p>
+            </div>
+            <p class="bi-envelope">
+              parceria@ligadaalimentacao.org.br<br />
+              info@ligadaalimentacao.org.br<br />
+              comunicacao@ligadaalimentacao.org.br
+              <br />financeiro@ligadaalimentacao.org.br
+            </p>
+            <p class="bi-clock">Seg. a Sex das 09:00 às 18:00</p>
+          </div>
+
+          <form
+            class="form-contato"
+            action="mailto:seuemail@example.com"
+            method="post"
+            enctype="text/plain"
+          >
+            <input
+              type="text"
+              id="name"
+              placeholder="Digite o nome completo"
+              required
+            />
+
+            <input
+              type="email"
+              id="email"
+              placeholder="DIgite o e-mail"
+              required
+            />
+            <input
+              type="text"
+              id="assunto"
+              placeholder="Digite o assunto"
+              required
+            />
+            <textarea
+              id="message"
+              placeholder="Sua mensagem"
+              name="message"
+              rows="4"
+              required
+            ></textarea>
+
+            <button type="submit" class="botao">Enviar mensagem</button>
+          </form>
+
+          <div class="redes-sociais">
+            <p>Nossas redes</p>
+            <div class="redes">
+              <a class="bi-facebook" href="#"></a>
+              <a class="bi-instagram" href="#"></a>
+              <a class="bi-linkedin" href="#"></a>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-reprogramese">
+        <h4>
+          Hackathon <br />
+          Desafio de programação
+        </h4>
+        <a href="https://reprograme-se.org.br/"
+          ><img
+            src="/assets/img/logo-reprogramese/preferencial-vertical.png"
+            alt="logotipo do reprograme-se"
+          />
+        </a>
+      </div>
+
+      <div class="footer-realizadores">
+        <h4>Realização</h4>
+        <div>
+          <a href="https://action.org.es/"
+            ><img
+              src="/assets/img/logo-action/vertical-cor.png"
+              alt="logotipo do action"
+            />
+          </a>
+          <a class="imagem-ifes" href="https://www.ifes.edu.br/"
+            ><img
+              src="/assets/img/logo-ifes/ifes-vertical-cor.png"
+              alt="logotipos do ifes"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="footer-desenvolvedores">
+        <h4>Desenvolvedores</h4>
+        <p>Richard Lima Valente</p>
+        <p>Felipe Souza da Silva</p>
+      </div>
+      <div class="footer-uso-de-imagem">
+        <h4>Uso de imagens</h4>
+        <a href="https://www.freepik.com/" target="_blank"
+          >https://www.freepik.com/</a
+        >
+        <a
+          href="https://www.cnnbrasil.com.br/nacional/inflacao-e-pandemia-podem-empurrar-brasil-de-volta-ao-mapa-da-fome/"
+          target="_blank"
+          >https://www.cnnbrasil.com.br</a
+        >
+        <a
+          href="https://agenciabrasil.ebc.com.br/direitos-humanos/noticia/2020-05/acao-da-cidadania-cnbb-e-caritas-vao-distribuir-alimentos-carentes#"
+          target="_blank"
+          >https://agenciabrasil.ebc.com.br</a
+        >
+      </div>
+    </footer>
+
+    <a href="#home" class="retorno-topo bi-arrow-up-circle"></a>
+
+    <div vw class="enabled">
+      <div vw-access-button class="active vlibras-button"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget("https://vlibras.gov.br/app");
+    </script>
+
+    <script src="/assets/js/script.js" defer></script>
+    <script src="/assets/js/carrocel.js" defer></script>
+  </body>
+</html>

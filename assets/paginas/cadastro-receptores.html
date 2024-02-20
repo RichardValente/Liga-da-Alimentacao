@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="/assets/css/reset.css" rel="stylesheet" type="text/css" />
+  <link href="/assets/css/style.css" rel="stylesheet" type="text/css" />
+
+  <!--imagem barra do browser-->
+  <link rel="shortcut icon" href="/assets/img/logo-Liga/logo-Liga-da-Alimentacao.png" type="image/x-icon">
+  <!-- Compatibilidade com Browser muito antigos-->
+  <link rel="icon" href="/assets/img/logo-Liga/logo-Liga-da-Alimentacao.png" sizes=" 32x32">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" defer></script>
+
+  <title>Liga da Alimentacao - cadastro receptores</title>
+</head>
+
+<body>
+  <header id='home'>
+    <a href="#home"><img class='imgLogo' src="/assets/img/logo-Liga/logo-Liga-da-Alimentacao.png"
+        alt="logotipo da liga da alimentação">
+    </a>
+  </header>
+  <div class="container">
+    <h1>Formulário de Receptor de doação </h1>
+    <hr>
+
+    <form method="post" class="mb-5 needs-validation novalidate" id="formReceptor" novalidate>
+
+      <fieldset>
+        <legend>Dados do Receptor</legend>
+        <div class="row">
+          <div class="col-md-8">
+            <div class="form-group">
+              <label for="cod">ID <span class="text-danger">*</span></label>
+              <input type="text" class="form-control" id="inputCod" placeholder="id" disabled>
+            </div>
+            <div class="form-group">
+              <label for="nome">Nome <span class="text-danger">*</span></label>
+              <input type="text" class="form-control" id="inputName" placeholder="Nome" required>
+              <div class="invalid-feedback">Por favor, insira o nome.</div>
+            </div>
+            <div class="form-group">
+              <label for="inputEmail">E-mail <span class="text-danger">*</span></label>
+              <input type="email" class="form-control" id="inputEmail" placeholder="E-mail" required>
+              <div class="invalid-feedback">Por favor, insira um e-mail válido.</div>
+            </div>
+            <div class="form-group">
+              <label for="inputTel">Telefone <span class="text-danger">*</span></label>
+              <input type="tel" class="form-control" id="inputTel" placeholder="(xx)xxxxx-xxxx" required>
+              <div class="invalid-feedback">Por favor, insira um número de telefone válido.</div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="inputImagem">Imagem<span class="text-danger">*</span></label>
+              <input type="text" class="form-control" id="InputImagem" placeholder="Caminho da imagem" required>
+              <div class="invalid-feedback">Por favor, insira o caminho da imagem.</div>
+            </div>
+            <div
+              class="form-group border border-primary mt-1 w-100 h-75 d-flex justify-content-center align-items-center">
+              <img src="" alt="Imagem" id="imagem" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </fieldset>
+
+
+      <fieldset>
+        <legend>Endereço</legend>
+        <div class="row">
+          <div class="form-group col">
+            <label for="inputAddress">Endereço</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="Rua, nº 0" required>
+            <div class="invalid-feedback">Por favor, selecione um arquivo.</div>
+          </div>
+
+          <div class="form-group col-4">
+            <label for="inputAddress2">Endereço 2</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartamento, hotel, casa, etc."
+              required>
+            <div class="invalid-feedback">Por favor, selecione um arquivo.</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-4">
+            <label for="inputEstado">Estado <span class="text-danger">*</span></label>
+            <select id="inputEstado" class="form-control" required>
+              <option selected disabled value="" required>Escolher...</option>
+
+              <option selected>Escolher...</option>
+              <option>Acre</option>
+              <option>Alagoas</option>
+              <option>Amapá</option>
+              <option>Amazonas</option>
+              <option>Bahia</option>
+              <option>Ceará</option>
+              <option>Distrito Federal</option>
+              <option>Espírito Santo</option>
+              <option>Goiás</option>
+              <option>Maranhão</option>
+              <option>Mato Grosso</option>
+              <option>Mato Grosso do Sul</option>
+              <option>Minas Gerais</option>
+              <option>Pará</option>
+              <option>Paraíba</option>
+              <option>Paraná</option>
+              <option>Pernambuco</option>
+              <option>Piauí</option>
+              <option>Rio de Janeiro</option>
+              <option>Rio Grande do Norte</option>
+              <option>Rio Grande do Sul</option>
+              <option>Rondônia</option>
+              <option>Roraima</option>
+              <option>Santa Catarina</option>
+              <option>São Paulo</option>
+              <option>Sergipe</option>
+              <option>Tocantins</option>
+
+            </select>
+            <div class="invalid-feedback">Por favor, selecione um estado.</div>
+          </div>
+
+          <div class="row col">
+            <div class="form-group col">
+              <label for="inputCity">Cidade <span class="text-danger">*</span></label>
+              <input type="text" class="form-control" id="inputCity" required>
+              <div class="invalid-feedback">Por favor, insira a cidade.</div>
+            </div>
+
+            <div class="form-group col-3">
+              <label for="inputCEP">CEP <span class="text-danger">*</span></label>
+              <input type="text" class="form-control" id="inputCEP" required>
+              <div class="invalid-feedback">Por favor, insira o CEP.</div>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Descrição do Receptor</legend>
+        <div class="form-group">
+          <label for="descricao">Breve descrição do Receptor <span class="text-danger">*</span></label>
+          <textarea class="form-control" id="descricao" rows="3" required></textarea>
+          <div class="invalid-feedback">Por favor, forneça uma descrição breve.</div>
+        </div>
+      </fieldset>
+
+      <div class="row">
+        <button type="submit" id="btnSalvar" class="btn btn-primary mt-3 mx-1 col-2">Salvar</button>
+        <input class="btn btn-primary mt-3 col-2 mx-1" type="reset" value="Reset">
+        <input class="btn btn-primary mt-3 col-2 mx-1" id="btnVisualizar" type="button" value="Visualizar">
+        <input class="btn btn-primary mt-3 col-2 mx-1" id="btnAnterior" type="button" value="Anterior">
+        <input class="btn btn-primary mt-3 col-2 mx-1" id="btnProximo" type="button" value="Proximo">
+
+        <button type="button" id="btnSair" class="btn btn-danger mt-3 col-2 mx-1">Sair</button>
+      </div>
+
+    </form>
+
+  </div>
+
+
+  <footer class="footer">
+    <div class="footer-reprogramese">
+      <h4>Hackathon <br> Desafio de programação</h4>
+      <a href="https://reprograme-se.org.br/"><img src="/assets/img/logo-reprogramese/preferencial-vertical.png"
+          alt="logotipo do reprograme-se"> </a>
+    </div>
+
+    <div class="footer-realizadores">
+      <h4>Realização</h4>
+      <div>
+        <a href="https://action.org.es/"><img src="/assets/img/logo-action/vertical-cor.png" alt="logotipo do action">
+        </a>
+        <a class="imagem-ifes" href="https://www.ifes.edu.br/"><img src="/assets/img/logo-ifes/ifes-vertical-cor.png"
+            alt="logotipos do ifes">
+        </a>
+      </div>
+    </div>
+    <div class="footer-desenvolvedores">
+      <h4>Desenvolvedores</h4>
+      <p>Richard Lima Valente</p>
+      <p>Felipe Souza da Silva</p>
+    </div>
+    <div class="footer-uso-de-imagem">
+      <h4>Uso de imagens</h4>
+      <a href="https://www.freepik.com/">https://www.freepik.com/</a>
+      <a
+        href="https://www.cnnbrasil.com.br/nacional/inflacao-e-pandemia-podem-empurrar-brasil-de-volta-ao-mapa-da-fome/">https://www.cnnbrasil.com.br</a>
+      <a
+        href="https://agenciabrasil.ebc.com.br/direitos-humanos/noticia/2020-05/acao-da-cidadania-cnbb-e-caritas-vao-distribuir-alimentos-carentes#">https://agenciabrasil.ebc.com.br</a>
+    </div>
+  </footer>
+
+  <a href="#home" class="retorno-topo bi-arrow-up-circle">
+
+    <div vw class="enabled">
+      <div vw-access-button class="active vlibras-button"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+
+    <script>
+
+      (function () {
+        'use strict';
+        window.addEventListener('load', function () {
+
+          var forms = document.getElementsByClassName('needs-validation');
+
+          var validation = Array.prototype.filter.call(forms, function (form) {
+            form.addEventListener('submit', function (event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+    </script>
+
+
+
+    <script src="/assets/js/cadastros.js" defer></script>
+    <script src="/assets/js/cadastro-receptores.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,247 @@
+{
+  "receptores": [
+    {
+      "id": 1,
+      "nome": "Associação Beneficente Esperança",
+      "email": "esperanca@example.com",
+      "telefone": "(12) 3456-7890",
+      "endereco": "Rua das Flores, 123",
+      "endereco2": "Sala 101",
+      "estado": "Rio de Janeiro",
+      "cidade": "Niteroi",
+      "cep": "12345-678",
+      "imagem": "/assets/img/mockups/Cabelos-cacheados-apontando-logo.png",
+      "descricao": "A Associação Beneficente Esperança atua há mais de 10 anos na comunidade, distribuindo alimentos para famílias em situação de vulnerabilidade."
+    },
+    {
+      "id": 2,
+      "nome": "Casa de Apoio Amor Fraterno",
+      "email": "amorfraterno@example.com",
+      "telefone": "(11) 9876-5432",
+      "endereco": "Avenida das Palmeiras, 456",
+      "endereco2": "Casa 2",
+      "estado": "São Paulo",
+      "cidade": "São Paulo",
+      "cep": "54321-987",
+      "imagem": "/assets/img/mockups/homem-camisa.png",
+      "descricao": "A Casa de Apoio Amor Fraterno acolhe crianças em situação de risco, oferecendo alimentação, abrigo e assistência social."
+    },
+    {
+      "id": 3,
+      "nome": "ONG Unidos pelo Bem",
+      "email": "unidospelobem@example.com",
+      "telefone": "(13) 2468-1357",
+      "endereco": "Rua dos Pássaros, 789",
+      "endereco2": "Bloco C",
+      "estado": "Espirito Santo",
+      "cidade": "Vitoria",
+      "cep": "98765-432",
+      "imagem": "/assets/img/mockups/jovens.png",
+      "descricao": "A ONG Unidos pelo Bem realiza campanhas de arrecadação de alimentos e distribui cestas básicas para famílias carentes da região."
+    },
+    {
+      "id": 4,
+      "nome": "Instituto Sorriso Solidário",
+      "email": "sorrisosolidario@example.com",
+      "telefone": "(14) 3692-1478",
+      "endereco": "Rua do Sol, 246",
+      "endereco2": "Apartamento 10",
+      "estado": "Rio de Janeiro",
+      "cidade": "RIo de Janeiro",
+      "cep": "24680-123",
+      "imagem": "/assets/img/mockups/pessoas-diferentes.png",
+      "descricao": "O Instituto Sorriso Solidário promove ações sociais e campanhas de doação de alimentos, visando melhorar a qualidade de vida de pessoas em situação de vulnerabilidade."
+    }
+  ],
+  "alimentos": [
+    {
+      "ID": 1,
+      "descricao": "Arroz",
+      "imagem": "https://img.freepik.com/fotos-gratis/visao-vertical-de-uma-saborosa-refeicao-de-arroz-em-uma-pequena-panela-marrom-e-uma-colher-de-pau-sobre-fundo-azul_140725-131407.jpg?w=360&t=st=1708193772~exp=1708194372~hmac=b6f2bf6a467098c637590e430d9ecfa256ef1fe19a275c58b7ddde9551c9d093"
+    },
+    {
+      "ID": 2,
+      "descricao": "Feijão",
+      "imagem": "https://img.freepik.com/fotos-gratis/feijao-vermelho-em-uma-tigela-pequena-coloque-sobre-o-tecido-do-saco_1150-35291.jpg?w=360&t=st=1708193978~exp=1708194578~hmac=2f483162b1dc220cab00264a2731225bd230365271b24c7c4310d50220d967d3"
+    },
+    {
+      "ID": 3,
+      "descricao": "Macarrão",
+      "imagem": "https://img.freepik.com/vetores-gratis/conjunto-realista-de-tipos-de-massas-italianas-secas-isoladas-na-ilustracao-vetorial-de-fundo-branco_1284-82761.jpg?w=740&t=st=1708194033~exp=1708194633~hmac=cbb3a4bb7a65bc79df1fc0679f0af92b0653d3026897b2860a1fe5d2ee593a3e"
+    },
+    {
+      "ID": 4,
+      "descricao": "Óleo de soja",
+      "imagem": "https://img.freepik.com/fotos-gratis/oleo-de-soja-produtos-de-alimentos-e-bebidas-de-soja-conceito-de-nutricao-alimentar_1150-26348.jpg?w=360&t=st=1708194156~exp=1708194756~hmac=acb8b52271c2e94d171a8e35fda0cf75c2cb676784b0c24cbe0824434a23b0a3"
+    },
+    {
+      "ID": 5,
+      "descricao": "Farinha de trigo",
+      "imagem": "https://img.freepik.com/fotos-gratis/farinha-escondida-usada-para-cozinhar_23-2149517187.jpg?w=360&t=st=1708194203~exp=1708194803~hmac=bfd5f6893a46435ec3d8359f0a9d2c04dbf67b71267d04736820285e0f0af54c"
+    },
+    {
+      "ID": 6,
+      "descricao": "Leite",
+      "imagem": "https://img.freepik.com/fotos-gratis/jarro-e-copo-de-leite-fresco_144627-42481.jpg?w=360&t=st=1708194285~exp=1708194885~hmac=cdd37c7ea502e313b60dacf6f1c736c03241eada1aa6eabc5d227e14ac14420c"
+    },
+    {
+      "ID": 7,
+      "descricao": "Ovos",
+      "imagem": "https://img.freepik.com/psd-gratuitas/ovos-em-tigela-isolados-em-fundo-transparente_191095-18205.jpg?w=740&t=st=1708194342~exp=1708194942~hmac=98042429ed590c845c69ff1a5fb07c3ee9613963f14625807f59c41beb8949ff"
+    },
+    {
+      "ID": 8,
+      "descricao": "Sal",
+      "imagem": "https://img.freepik.com/fotos-gratis/sal-marinho-saindo-do-saleiro_176474-1689.jpg?w=740&t=st=1708194396~exp=1708194996~hmac=32dc9b81f74046422c1f2e346e65abc0dd2bdd5fb1cc3a1104010d6da1b46346"
+    },
+    {
+      "ID": 9,
+      "descricao": "biscoitos",
+      "imagem": "https://img.freepik.com/fotos-gratis/muitos-biscoitos-sao-colocados-no-tecido-e-depois-sobre-uma-mesa-de-madeira_1150-19682.jpg?w=740&t=st=1708194476~exp=1708195076~hmac=5341d279a37c490d4d50169d8dbc452c3c795182740671eaedad9941bac53a36"
+    },
+    {
+      "ID": 10,
+      "descricao": "Manteiga",
+      "imagem": "https://img.freepik.com/fotos-gratis/uma-fatia-de-manteiga-caseira-em-uma-travessa-de-ceramica_114579-71904.jpg?w=740&t=st=1708194608~exp=1708195208~hmac=eef1630383b534468239873a338e097d3917852ecdfd9cb1663749f4d4208fb5"
+    }
+  ],
+  "doacoes": [
+    {
+      "id": 1,
+      "nome": "Doação 1",
+      "endereco": "Endereço da doação 1",
+      "email": "doacao1@example.com",
+      "telefone": "(11) 1111-1111",
+      "id_receptor": 1,
+      "id_alimento": 1,
+      "data_validade": "2024-12-31",
+      "quantidade": 5
+    },
+    {
+      "id": 2,
+      "nome": "Doação 2",
+      "endereco": "Endereço da doação 2",
+      "email": "doacao2@example.com",
+      "telefone": "(22) 2222-2222",
+      "id_receptor": 2,
+      "id_alimento": 2,
+      "data_validade": "2024-12-31",
+      "quantidade": 10
+    },
+    {
+      "id": 3,
+      "nome": "Doação 3",
+      "endereco": "Endereço da doação 3",
+      "email": "doacao3@example.com",
+      "telefone": "(33) 3333-3333",
+      "id_receptor": 3,
+      "id_alimento": 3,
+      "data_validade": "2024-12-31",
+      "quantidade": 15
+    },
+    {
+      "id": 4,
+      "nome": "Doação 4",
+      "endereco": "Endereço da doação 4",
+      "email": "doacao4@example.com",
+      "telefone": "(44) 4444-4444",
+      "id_receptor": 4,
+      "id_alimento": 4,
+      "data_validade": "2024-12-31",
+      "quantidade": 20
+    },
+    {
+      "id": 5,
+      "nome": "Doação 5",
+      "endereco": "Endereço da doação 5",
+      "email": "doacao5@example.com",
+      "telefone": "(55) 5555-5555",
+      "id_receptor": 1,
+      "id_alimento": 5,
+      "data_validade": "2024-12-31",
+      "quantidade": 25
+    },
+    {
+      "id": 6,
+      "nome": "Doação 6",
+      "endereco": "Endereço da doação 6",
+      "email": "doacao6@example.com",
+      "telefone": "(66) 6666-6666",
+      "id_receptor": 2,
+      "doacao": [
+        {
+          "id_alimento": 8,
+          "data_validade": "2024-12-31",
+          "quantidade": 20
+        },
+        {
+          "id_alimento": 6,
+          "data_validade": "2024-12-31",
+          "quantidade": 30
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "nome": "Doação 7",
+      "endereco": "Endereço da doação 7",
+      "email": "doacao7@example.com",
+      "telefone": "(77) 7777-7777",
+      "id_receptor": 3,
+      "id_alimento": 7,
+      "data_validade": "2024-12-31",
+      "quantidade": 35
+    },
+    {
+      "id": 8,
+      "nome": "Doação 8",
+      "endereco": "Endereço da doação 8",
+      "email": "doacao8@example.com",
+      "telefone": "(88) 8888-8888",
+      "id_receptor": 4,
+      "id_alimento": 8,
+      "data_validade": "2024-12-31",
+      "quantidade": 40
+    },
+    {
+      "id": 9,
+      "nome": "Doação 9",
+      "endereco": "Endereço da doação 9",
+      "email": "doacao9@example.com",
+      "telefone": "(99) 9999-9999",
+      "id_receptor": 1,
+      "doacao": [
+        {
+          "id_alimento": 9,
+          "data_validade": "2024-12-20",
+          "quantidade": 25
+        },
+        {
+          "id_alimento": 10,
+          "data_validade": "2024-12-25",
+          "quantidade": 20
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "nome": "Doação 10",
+      "endereco": "Endereço da doação 10",
+      "email": "doacao10@example.com",
+      "telefone": "(00) 0000-0000",
+      "id_receptor": 2,
+      "doacao": [
+        {
+          "id_alimento": 10,
+          "data_validade": "2024-12-30",
+          "quantidade": 30
+        },
+        {
+          "id_alimento": 7,
+          "data_validade": "2024-12-31",
+          "quantidade": 20
+        }
+      ]
+    }
+  ]
+}

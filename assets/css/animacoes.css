@@ -1,0 +1,128 @@
+/* botao menu*/
+
+#toggle-menu-btn {
+  color: #000;
+  background-color: transparent;
+  border: none;
+  padding: 10px 20px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Estilo do botão quando o menu estiver visível */
+.menu-open #toggle-menu-btn {
+  background-color: transparent;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+/* Estilo do menu quando estiver visível */
+.menu-open #main-menu {
+  display: block;
+  margin-right: 30px;
+}
+
+.slider-container {
+  width: 100%;
+  height: calc(100vh - 205px);
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider {
+  display: flex;
+  height: 100%;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 0 0 100%;
+  height: 100%;
+  text-align: center;
+  padding: 20px 50px;
+  z-index: 9999;
+}
+
+.prev,
+.next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 48px;
+  width: 48px;
+  top: 50%;
+  cursor: pointer;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: #253f93;
+  border: 1px solid #253f93;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #fb9b28;
+}
+
+.promocao a:hover,
+#slide-restaurante a:hover {
+  color: #fff;
+  border: #253f93;
+}
+
+/* form*/
+
+.form-contato input:hover,
+.form-contato textarea:hover,
+.promocao a:hover {
+  box-shadow: 0 0 10px #253f93, 0 0 2px #3b88fa inset;
+}
+
+.form-contato input:focus-visible,
+.form-contato textarea:focus-visible {
+  outline: none;
+  box-shadow: 0 0 10px #253f93, 0 0 2px #3b88fa inset;
+}
+
+.form-contato button:hover,
+.promocao a:hover,
+.btn-depoimentos:hover {
+  cursor: pointer;
+}
+
+/* depoimentos */
+.btn-depoimentos:hover {
+  background-color: #253f93;
+  color: #fff;
+}

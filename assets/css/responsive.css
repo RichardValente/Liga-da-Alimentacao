@@ -1,0 +1,240 @@
+@media (max-width: 1200px) {
+  /*necessario pois a parte de contatos estava sobepondo*/
+
+  .sessao-slider {
+    height: 450px;
+  }
+
+  .sessao-contatos {
+    height: 100%;
+  }
+
+  .sessao-contatos article {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .form-contato {
+    width: 70%;
+  }
+
+  .sessao-contatos article .contatos {
+    width: 100%;
+    align-items: center;
+  }
+
+  .redes {
+    flex-direction: row;
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-width: 961px) {
+  #main-menu {
+    display: block;
+  }
+}
+
+@media (max-width: 960px) {
+  
+  header {
+    position: inherit;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 2px 10px 20px #dedede;
+  }
+
+  .sessao-slider {
+    height: 450px;
+  }
+
+  #main-menu {
+    display: none;
+  }
+
+  #toggle-menu-btn {
+    display: block;
+  }
+
+  .menu-open #main-menu {
+    display: block;
+  }
+
+  nav {
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  header ul {
+    width: 35%;
+    height: 300px;
+    margin-top: 50px;
+    position: absolute;
+    z-index: 9999;
+    flex-direction: column;
+    background-color: #fff;
+    right: 0px;
+  }
+
+  .sessao-slider {
+    width: 100%;
+  }
+
+  .comofunciona {
+    width: 100%;
+    height: 100%;
+    box-shadow: none;
+    flex-direction: row;
+  }
+
+  .comofunciona .descricao {
+    flex-direction: column;
+    width: fit-content;
+    padding: 25px;
+  }
+
+  .comofunciona .descricao div {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .comofunciona > .descricao > div:nth-child(odd) {
+    margin-top: 1px;
+  }
+
+  .comofunciona > .descricao > div:nth-child(even) {
+    margin-bottom: 1px;
+  }
+
+  .convocacao div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .convocacao div a {
+    font-size: 1rem;
+  }
+
+  .lista-propostas {
+    flex-direction: column;
+  }
+
+  .lista-propostas div {
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 15px;
+    width: 80vw;
+    padding: 20px 20px;
+    background-color: #f6f5f5;
+    box-shadow: 0 0 10px #0f5f96;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  .lista-propostas div img {
+    width: 100%;
+    height: 40%;
+    border-radius: 10px;
+  }
+  .lista-propostas div p {
+    font-size: 1.5rem;
+  }
+
+  .footer {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer div {
+    margin: 20px;
+    flex: 0 0 calc(50% - 40px);
+    /* 50% de largura com margem */
+    max-width: calc(50% - 40px);
+    /* 50% de largura com margem */
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    position: fixed;
+    background-color: #dedede;
+    z-index: 99999;
+  }
+
+  .comofunciona .descricao div {
+    flex-direction: column;
+  }
+
+  .comofunciona > .descricao > div:nth-child(even) {
+    flex-direction: column-reverse;
+    margin: 20px;
+  }
+
+  .comofunciona > .descricao > div:nth-child(odd) {
+    margin: 20px;
+  }
+
+  .slider-container {
+    width: 100%;
+  }
+  .slider {
+    width: 100%;
+  }
+
+  #slogan h3 {
+    font-size: 1.5rem;
+    width: 60%;
+  }
+
+  .slide p {
+    font-size: 1rem;
+  }
+
+  .sessao-slider {
+    margin-top: 135px;
+    height: 250px;
+    width: 100%;
+    margin-bottom: 45px;
+  }
+
+  .descricao-emp-teto {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    height: 400px;
+  }
+
+  .convocacao {
+    height: 100%;
+  }
+
+  .convocacao div {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 100%;
+  }
+
+  /*depoimentos*/
+  .cards .card {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 460px) {
+  body {
+    width: 100%;
+  }
+
+  .retorno-topo {
+    display: none;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+
+  .footer div {
+    flex-direction: column;
+  }
+}
